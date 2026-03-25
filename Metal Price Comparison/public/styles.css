@@ -1,0 +1,162 @@
+/* General Styles */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+/* Price Cards */
+.price-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.price-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.price-card .card-title {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.price-card .price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+.price-card .unit {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.price-card .change {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.price-card .change.positive {
+    color: #28a745;
+}
+
+.price-card .change.negative {
+    color: #dc3545;
+}
+
+/* Market Status */
+.market-status {
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Navigation */
+.nav-link {
+    color: #333;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 4px;
+    margin: 0 2px;
+}
+
+.nav-link:hover {
+    background-color: #f8f9fa;
+    color: #D4AF37;
+}
+
+.nav-link.active {
+    background-color: #D4AF37;
+    color: white !important;
+}
+
+/* Buttons */
+.btn-gold {
+    background-color: #D4AF37;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+.btn-gold:hover {
+    background-color: #C5A028;
+    color: white;
+}
+
+/* Tables */
+.table-hover tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+/* Cards */
+.card {
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Chart Container */
+#priceChart {
+    max-height: 400px;
+}
+
+/* Form Controls */
+.form-select,
+.form-control {
+    border: 1px solid #ddd;
+}
+
+.form-select:focus,
+.form-control:focus {
+    border-color: #D4AF37;
+    box-shadow: 0 0 0 0.2rem rgba(212, 175, 55, 0.25);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .price-card .price {
+        font-size: 1.5rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Page Content */
+.page-content {
+    animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Footer */
+footer {
+    margin-top: 60px;
+}
