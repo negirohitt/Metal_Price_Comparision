@@ -102,7 +102,7 @@ function generateHistoricalData(basePrice, days) {
     for (let i = days - 1; i >= 0; i--) {
         const date = new Date(today);
         date.setDate(date.getDate() - i);
-        
+
         // Format date
         const label = date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
         labels.push(label);
@@ -121,7 +121,7 @@ function initChart() {
     const ctx = document.getElementById('priceChart').getContext('2d');
     const selectedMetal = document.getElementById('historyMetalSelect').value;
     const period = parseInt(document.getElementById('periodSelect').value);
-    
+
     const basePrice = basePrices[selectedMetal];
     const chartData = generateHistoricalData(basePrice, period);
 
